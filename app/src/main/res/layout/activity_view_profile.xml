@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfile"
+    android:background="@color/profilegraylight"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/gradientbackground"
+                android:layout_height="260dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/profileimage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Profile"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                android:outlineAmbientShadowColor="@color/black"
+                app:cardCornerRadius="10dp"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profilename"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/colortextPrimary"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profileusername"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profileaadhaar"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profilephonenumber"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profilepassword"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"/>
+
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/backgroundbutton"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:text="Update My Profile"
+                        android:onClick="updateprofile"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:layout_margin="20dp"
+                        android:textSize="18dp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
